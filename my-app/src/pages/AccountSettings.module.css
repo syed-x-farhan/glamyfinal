@@ -1,0 +1,221 @@
+/*====================
+    Layout & Grid
+====================*/
+.settingsContainer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+/*====================
+    Header Styles
+====================*/
+.settingsHeader {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.settingsHeader h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.settingsHeader p {
+    color: #666;
+    font-size: 1rem;
+}
+
+/*====================
+    Form Sections
+====================*/
+.settingsContent {
+    padding: 1rem 0;
+}
+
+.formSection {
+    margin-bottom: 2.5rem;
+}
+
+.formSection h3 {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #836472;
+}
+
+/*====================
+    Input Styles
+====================*/
+.inputGroup {
+    margin-bottom: 1.5rem;
+}
+
+.inputWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.inputIcon {
+    position: absolute;
+    left: 1rem;
+    color: #836472;
+    font-size: 1.2rem;
+}
+
+.inputWrapper input,
+.inputWrapper textarea {
+    width: 100%;
+    padding: 1rem 1rem 1rem 3rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background-color: #f8f9fa;
+}
+
+.inputWrapper input:focus,
+.inputWrapper textarea:focus {
+    outline: none;
+    border-color: #836472;
+    box-shadow: 0 0 0 2px rgba(131, 100, 114, 0.1);
+    background-color: #fff;
+}
+
+.textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/*====================
+    Button Styles
+====================*/
+.buttonGroup {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    margin-top: 2rem;
+}
+
+.saveButton,
+.cancelButton {
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.saveButton {
+    background-color: #836472;
+    color: white;
+    border: none;
+}
+
+.saveButton:hover {
+    background-color: #6a4f5c;
+    transform: translateY(-1px);
+}
+
+.cancelButton {
+    background-color: transparent;
+    color: #666;
+    border: 1px solid #ddd;
+}
+
+.cancelButton:hover {
+    background-color: #f8f9fa;
+    border-color: #ccc;
+}
+
+/*====================
+  Responsive Design
+====================*/
+@media (max-width: 768px) {
+    .settingsContainer {
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .buttonGroup {
+        flex-direction: column;
+    }
+
+    .saveButton,
+    .cancelButton {
+        width: 100%;
+    }
+}
+
+/*====================
+    Animations
+====================*/
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.settingsContainer {
+    animation: fadeIn 0.3s ease-out;
+}
+
+/*====================
+    Input Effects
+====================*/
+.inputWrapper input:focus::placeholder,
+.inputWrapper textarea:focus::placeholder {
+    color: #836472;
+}
+
+.inputWrapper:hover input,
+.inputWrapper:hover textarea {
+    border-color: #836472;
+}
+
+/*====================
+  Success Message
+====================*/
+.successMessage {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.3s ease-out;
+    z-index: 1000;
+}
+
+.successIcon {
+    font-size: 1.2rem;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+} 

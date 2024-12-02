@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "name": "Black ribbed collar shirt",
+    "price": 25,
+    "url": "https://i.pinimg.com/236x/ae/51/77/ae5177538f4c3e4b4aaa405943d70728.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Grey long coat",
+    "price": 70,
+    "url": "https://i.pinimg.com/236x/4a/20/5a/4a205ae4958dd8c65220ed38d6de9e31.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Grey sneakers",
+    "price": 90,
+    "url": "https://i.pinimg.com/enabled_hi/236x/9a/7d/05/9a7d052c77c085352690ca0573aaef45.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Graphic hoodie",
+    "price": 20,
+    "url": "https://i.pinimg.com/enabled_hi/236x/4e/96/15/4e961510aa048d050c206bc317632306.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Grey turtle neck sweater",
+    "price": 25,
+    "url": "https://i.pinimg.com/enabled_hi/236x/06/da/40/06da40e8917cb80a60537f31244f4a1c.jpg"
+  },
+  {
+    "id": 6,
+    "name": "City of angels hoodie",
+    "price": 20,
+    "url": "https://i.pinimg.com/236x/81/74/a9/8174a9cba3de634f43b41bae5ba9ac49.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Beige cargo pants",
+    "price": 15,
+    "url": "https://i.pinimg.com/236x/2c/5d/18/2c5d186a3ec7c5eb30b036fd784d522a.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Grey cargo pants",
+    "price": 15,
+    "url": "https://i.pinimg.com/236x/6b/de/12/6bde1286ec4d8df1fd1ce9a4177904ee.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Brown linen pants",
+    "price": 20,
+    "url": "https://i.pinimg.com/enabled_hi/236x/fc/f0/d9/fcf0d938356e09163f77f2fa10987400.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Grey Nike sneakers",
+    "price": 150,
+    "url": "https://i.pinimg.com/enabled_hi/236x/f5/fc/57/f5fc57b2e85cb2f810bc453192738112.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Green hoodie",
+    "price": 23,
+    "url": "https://i.pinimg.com/enabled_hi/236x/96/7d/47/967d477c7f9301766115c410e7cf3e1e.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Basic green t-shirt",
+    "price": 12,
+    "url": "https://i.pinimg.com/enabled_hi/564x/b2/fc/96/b2fc960bc4dd5e76330f75abf8402823.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Beige long coat",
+    "price": 65,
+    "url": "https://i.pinimg.com/enabled_hi/564x/b5/ce/57/b5ce57d7ab9358db624a9fb08b3f3064.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Beige long skirt",
+    "price": 25,
+    "url": "https://i.pinimg.com/enabled_hi/236x/ed/9d/81/ed9d81b51fac618cfabcbb1af302cde1.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Super cropped hoodie",
+    "price": 10,
+    "url": "https://i.pinimg.com/enabled_hi/564x/71/e5/63/71e563b3c2839eafd3bad0eae1694b48.jpg"
+  },
+
+  {
+    "id": 16,
+    "name": "Carpenter Dark Grey Denim",
+    "price": 3600,
+    "url": "https://groovypakistan.com/cdn/shop/files/3F.svg?v=1726844606&width=779"
+  },
+
+  {
+    "id": 17,
+    "name": "Legacy Is The Vision Sweatshirt",
+    "price": 2399,
+    "url": "https://groovypakistan.com/cdn/shop/files/LEGACY_BACK.svg?v=1726593609&width=848"
+  },
+
+  {
+    "id": 18,
+    "name": "Drake's Legacy Hoodie",
+    "price": 2500,
+    "url": "https://groovypakistan.com/cdn/shop/files/1_659e3c7a-b4f8-4d8d-ae32-e6ac3848625a.jpg?v=1699788508&width=848"
+  },
+
+  {
+    "id": 19,
+    "name": "Baby Pink Sweatshirt",
+    "price": 2890,
+    "url": "https://fittedshop.com/cdn/shop/files/q.jpg?v=1728726754&width=1800"
+  },
+
+  {
+    "id": 20,
+    "name": "Olive Knitted POLO ",
+    "price": 2700,
+    "url": "https://fittedshop.com/cdn/shop/files/15.jpg?v=1728118705&width=1800"
+  }
+
+
+
+]

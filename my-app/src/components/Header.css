@@ -1,0 +1,15 @@
+.glamy-header {
+    background-color: #836472;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .glamy-logo img {
+    height: 350px; 
+  }
+  

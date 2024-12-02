@@ -1,0 +1,321 @@
+/*====================
+    Global Styles
+====================*/
+body {
+  overflow-y: scroll;
+}
+
+/*====================
+    Layout & Grid
+====================*/
+.checkoutContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.checkoutContainer h1 {
+  font-size: 2em;
+  color: #333;
+  margin: 20px 0;
+}
+
+.checkoutContent {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+/*====================
+    Shipping Form
+====================*/
+.shippingForm {
+  flex: 7;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.shippingForm h2 {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.formRow {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.formGroup label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.formGroup label span {
+  color: #dc3545;
+}
+
+.formGroup input,
+.formGroup select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+  background-color: #f9f9f9;
+}
+
+.formGroup input:focus,
+.formGroup select:focus {
+  outline: none;
+  border-color: #8B5CF6;
+  box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.2);
+}
+
+/*====================
+  Payment Section
+====================*/
+.paymentSection {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.paymentOption {
+  background-color: #f8f8f8;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.paymentOption.selected {
+  background-color: #f0ebff;
+  border: 1px solid #8B5CF6;
+}
+
+.paymentHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.paymentLeft {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.radioCircle {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #666;
+  border-radius: 50%;
+  position: relative;
+}
+
+.selected .radioCircle {
+  border-color: #8B5CF6;
+}
+
+.selected .radioCircle::after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #8B5CF6;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.expandIcon {
+  transition: transform 0.3s ease;
+  font-size: 1.5em;
+}
+
+.selected .expandIcon {
+  transform: rotate(90deg);
+}
+
+.cardForm {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.expiryCvv {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+/*====================
+  Order Summary
+====================*/
+.orderSummary {
+  flex: 3;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  height: fit-content;
+  position: sticky;
+  top: 0;
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
+}
+
+.orderSummary h2 {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/*====================
+    Item Styles
+====================*/
+.item {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.itemImage {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 15px;
+}
+
+.itemDetails {
+  flex: 1;
+}
+
+.itemDetails p {
+  margin: 0;
+}
+
+.itemDetails p:first-child {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.itemPrice {
+  color: #666;
+}
+
+.itemQuantity {
+  margin-left: 10px;
+  color: #999;
+}
+
+/*====================
+    Summary
+====================*/
+.summary {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.summary > div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.total {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 2px solid #ddd;
+  font-weight: bold;
+  color: #333;
+  font-size: 1.1em;
+}
+
+.discount {
+  color: #28a745;
+}
+
+/*====================
+    Form Elements
+====================*/
+.error {
+  color: #dc3545;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #fff5f5;
+  border-radius: 6px;
+  border: 1px solid #dc3545;
+}
+
+.submitButton {
+  width: 100%;
+  padding: 16px;
+  background-color: #060606;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.submitButton:hover {
+  background-color: #2f2e30;
+}
+
+/*====================
+  Responsive Design
+====================*/
+@media (max-width: 768px) {
+  .checkoutContent {
+    flex-direction: column;
+  }
+  
+  .orderSummary {
+    position: relative;
+    top: 0;
+    margin-bottom: 40px;
+  }
+  
+  .checkoutContainer {
+    padding-top: 80px;
+  }
+}
+
+/*====================
+    Utilities
+====================*/
+input, select {
+  max-width: 100%;
+  box-sizing: border-box;
+}

@@ -1,0 +1,297 @@
+/*====================
+    Global Styles
+====================*/
+body {
+  overflow-y: scroll;
+}
+
+/*====================
+    Layout & Grid
+====================*/
+.main {
+  padding-top: 80px;
+  min-height: calc(100vh - 80px);
+  background: #f5f5f5;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  gap: 20px;
+}
+
+/*====================
+    Cart Section
+====================*/
+.cartSection {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: -60px;
+}
+
+.pageTitle {
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  margin: 0;
+  padding: 0 20px;
+}
+
+.cartItems {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*====================
+    Cart Items
+====================*/
+.cartItem {
+  display: flex;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+  position: relative;
+}
+
+.cartItem:last-child {
+  border-bottom: none;
+}
+
+.removeItem {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #999;
+}
+
+.itemImage {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+.itemImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.itemDetails {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.itemInfo {
+  flex: 1;
+}
+
+.itemName {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+}
+
+.itemPrice {
+  color: #666;
+  margin: 0;
+}
+
+/*====================
+  Quantity Controls
+====================*/
+.quantityControls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantityBtn {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.quantityBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.quantity {
+  min-width: 30px;
+  text-align: center;
+}
+
+/*====================
+  Summary Section
+====================*/
+.summarySection {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.summaryTitle {
+  margin: 0 0 20px 0;
+  font-size: 18px;
+}
+
+.summaryItem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.total {
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+  font-weight: bold;
+}
+
+.checkoutBtn {
+  width: 100%;
+  padding: 15px;
+  background: #000;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+/*====================
+  Voucher Styles
+====================*/
+.voucherLink {
+  color: #666;
+  cursor: pointer;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.appliedVoucher {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #f8f8f8;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.removeVoucher {
+  cursor: pointer;
+  color: #999;
+}
+
+/*====================
+    Modal Styles
+====================*/
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+}
+
+.closeModal {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #999;
+}
+
+.voucherInput {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+.applyBtn {
+  width: 100%;
+  padding: 12px;
+  background: #000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/*====================
+  Responsive Design
+====================*/
+@media (min-width: 1024px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .cartSection {
+    flex: 1 1 65%;
+    margin-right: 20px;
+  }
+
+  .summarySection {
+    flex: 1 1 30%;
+    position: sticky;
+    top: 100px;
+    height: fit-content;
+  }
+}
+
+@media (max-width: 1023px) {
+  .container {
+    padding: 15px;
+  }
+
+  .cartSection,
+  .summarySection {
+    width: 100%;
+  }
+
+  .itemImage {
+    width: 80px;
+    height: 80px;
+  }
+
+  .itemDetails {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .quantityControls {
+    margin-top: 10px;
+  }
+}
